@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hr_Management_softwareDataSet2" targetNamespace="http://tempuri.org/hr_Management_softwareDataSet2.xsd" xmlns:mstns="http://tempuri.org/hr_Management_softwareDataSet2.xsd" xmlns="http://tempuri.org/hr_Management_softwareDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="hr_Management_softwareConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hr_Management_softwareConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HR_Management_System.My.MySettings.GlobalReference.Default.hr_Management_softwareConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="employee_formTableAdapter" GeneratorDataComponentClassName="employee_formTableAdapter" Name="employee_form" UserDataComponentName="employee_formTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hr_Management_softwareConnectionString (MySettings)" DbObjectName="[hr Management software].dbo.employee_form" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[employee_form] WHERE (([id] = @Original_id) AND ((@IsNull_Employee_No = 1 AND [Employee_No] IS NULL) OR ([Employee_No] = @Original_Employee_No)) AND ((@IsNull_Employee_Name = 1 AND [Employee_Name] IS NULL) OR ([Employee_Name] = @Original_Employee_Name)) AND ((@IsNull_Nationality = 1 AND [Nationality] IS NULL) OR ([Nationality] = @Original_Nationality)) AND ((@IsNull_Destination = 1 AND [Destination] IS NULL) OR ([Destination] = @Original_Destination)) AND ((@IsNull_Division = 1 AND [Division] IS NULL) OR ([Division] = @Original_Division)) AND ((@IsNull_Qid_No = 1 AND [Qid_No] IS NULL) OR ([Qid_No] = @Original_Qid_No)) AND ((@IsNull_Qid_Expiry_Date = 1 AND [Qid_Expiry_Date] IS NULL) OR ([Qid_Expiry_Date] = @Original_Qid_Expiry_Date)) AND ((@IsNull_Passport_Number = 1 AND [Passport_Number] IS NULL) OR ([Passport_Number] = @Original_Passport_Number)) AND ((@IsNull_PP_Expiry_Date = 1 AND [PP_Expiry_Date] IS NULL) OR ([PP_Expiry_Date] = @Original_PP_Expiry_Date)) AND ((@IsNull_Driving_Licence = 1 AND [Driving_Licence] IS NULL) OR ([Driving_Licence] = @Original_Driving_Licence)) AND ((@IsNull_D_Licence_Expiry_Date = 1 AND [D_Licence_Expiry_Date] IS NULL) OR ([D_Licence_Expiry_Date] = @Original_D_Licence_Expiry_Date)) AND ((@IsNull_Health_Card_No = 1 AND [Health_Card_No] IS NULL) OR ([Health_Card_No] = @Original_Health_Card_No)) AND ((@IsNull_Health_Card_Expiry_Date = 1 AND [Health_Card_Expiry_Date] IS NULL) OR ([Health_Card_Expiry_Date] = @Original_Health_Card_Expiry_Date)) AND ((@IsNull_Dath_of_Birth = 1 AND [Dath_of_Birth] IS NULL) OR ([Dath_of_Birth] = @Original_Dath_of_Birth)) AND ((@IsNull_Blood_Group = 1 AND [Blood_Group] IS NULL) OR ([Blood_Group] = @Original_Blood_Group)) AND ((@IsNull_Join_Date = 1 AND [Join_Date] IS NULL) OR ([Join_Date] = @Original_Join_Date)) AND ((@IsNull_Re_entry_date = 1 AND [Re_entry_date] IS NULL) OR ([Re_entry_date] = @Original_Re_entry_date)) AND ((@IsNull_Total_year_service = 1 AND [Total_year_service] IS NULL) OR ([Total_year_service] = @Original_Total_year_service)) AND ((@IsNull_Re_service = 1 AND [Re_service] IS NULL) OR ([Re_service] = @Original_Re_service)) AND ((@IsNull_Basic_salary = 1 AND [Basic_salary] IS NULL) OR ([Basic_salary] = @Original_Basic_salary)) AND ((@IsNull_Allawance = 1 AND [Allawance] IS NULL) OR ([Allawance] = @Original_Allawance)) AND ((@IsNull_Mobile_Number = 1 AND [Mobile_Number] IS NULL) OR ([Mobile_Number] = @Original_Mobile_Number)) AND ((@IsNull_Address_in_qater = 1 AND [Address_in_qater] IS NULL) OR ([Address_in_qater] = @Original_Address_in_qater)) AND ((@IsNull_Next_of_kin = 1 AND [Next_of_kin] IS NULL) OR ([Next_of_kin] = @Original_Next_of_kin)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Employee_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Employee_No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Employee_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Employee_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Employee_Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Employee_Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nationality" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nationality" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nationality" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Destination" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Destination" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Destination" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Destination" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Division" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Division" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Qid_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Qid_No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Qid_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Qid_No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Qid_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Qid_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Qid_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Qid_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Passport_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Passport_Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Passport_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Passport_Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PP_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PP_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_PP_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PP_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Driving_Licence" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Driving_Licence" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Driving_Licence" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Driving_Licence" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_D_Licence_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="D_Licence_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_D_Licence_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="D_Licence_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Health_Card_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Health_Card_No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Health_Card_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Health_Card_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Health_Card_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Health_Card_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Dath_of_Birth" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Dath_of_Birth" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Dath_of_Birth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Dath_of_Birth" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Blood_Group" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Blood_Group" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Blood_Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Blood_Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Join_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Join_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Join_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Join_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Re_entry_date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Re_entry_date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Re_entry_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_entry_date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Total_year_service" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total_year_service" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Total_year_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Total_year_service" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Re_service" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Re_service" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Re_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_service" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Basic_salary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Basic_salary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Basic_salary" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Basic_salary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Allawance" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Allawance" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Allawance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Allawance" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mobile_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mobile_Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Mobile_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Mobile_Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Address_in_qater" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Address_in_qater" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Address_in_qater" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address_in_qater" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Next_of_kin" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Next_of_kin" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Next_of_kin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Next_of_kin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[employee_form] ([Employee_No], [Employee_Name], [Nationality], [Destination], [Division], [Qid_No], [Qid_Expiry_Date], [Passport_Number], [PP_Expiry_Date], [Driving_Licence], [D_Licence_Expiry_Date], [Health_Card_No], [Health_Card_Expiry_Date], [Dath_of_Birth], [Blood_Group], [Join_Date], [Re_entry_date], [Total_year_service], [Re_service], [Basic_salary], [Allawance], [Mobile_Number], [Address_in_qater], [Next_of_kin], [Image], [Destination_Image], [Qid_image], [PP_image], [DL_Image], [Health_Image], [Allowance_Image]) VALUES (@Employee_No, @Employee_Name, @Nationality, @Destination, @Division, @Qid_No, @Qid_Expiry_Date, @Passport_Number, @PP_Expiry_Date, @Driving_Licence, @D_Licence_Expiry_Date, @Health_Card_No, @Health_Card_Expiry_Date, @Dath_of_Birth, @Blood_Group, @Join_Date, @Re_entry_date, @Total_year_service, @Re_service, @Basic_salary, @Allawance, @Mobile_Number, @Address_in_qater, @Next_of_kin, @Image, @Destination_Image, @Qid_image, @PP_image, @DL_Image, @Health_Image, @Allowance_Image);
+SELECT id, Employee_No, Employee_Name, Nationality, Destination, Division, Qid_No, Qid_Expiry_Date, Passport_Number, PP_Expiry_Date, Driving_Licence, D_Licence_Expiry_Date, Health_Card_No, Health_Card_Expiry_Date, Dath_of_Birth, Blood_Group, Join_Date, Re_entry_date, Total_year_service, Re_service, Basic_salary, Allawance, Mobile_Number, Address_in_qater, Next_of_kin, Image, Destination_Image, Qid_image, PP_image, DL_Image, Health_Image, Allowance_Image FROM employee_form WHERE (id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Employee_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Employee_Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nationality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Destination" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Destination" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Division" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Qid_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Qid_No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Qid_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Qid_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Passport_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Passport_Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@PP_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PP_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Driving_Licence" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Driving_Licence" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@D_Licence_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="D_Licence_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Health_Card_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Health_Card_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Dath_of_Birth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Dath_of_Birth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Blood_Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Blood_Group" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Join_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Join_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Re_entry_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_entry_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Total_year_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Total_year_service" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Re_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_service" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Basic_salary" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Basic_salary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Allawance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Allawance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Mobile_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Mobile_Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Address_in_qater" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address_in_qater" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Next_of_kin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Next_of_kin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Destination_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Destination_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Qid_image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Qid_image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@PP_image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="PP_image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@DL_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="DL_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Health_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Health_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Allowance_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Allowance_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, Employee_No, Employee_Name, Nationality, Destination, Division, Qid_No, Qid_Expiry_Date, Passport_Number, PP_Expiry_Date, Driving_Licence, D_Licence_Expiry_Date, Health_Card_No, Health_Card_Expiry_Date, Dath_of_Birth, Blood_Group, Join_Date, Re_entry_date, Total_year_service, Re_service, Basic_salary, Allawance, Mobile_Number, Address_in_qater, Next_of_kin, Image, Destination_Image, Qid_image, PP_image, DL_Image, Health_Image, Allowance_Image FROM dbo.employee_form</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[employee_form] SET [Employee_No] = @Employee_No, [Employee_Name] = @Employee_Name, [Nationality] = @Nationality, [Destination] = @Destination, [Division] = @Division, [Qid_No] = @Qid_No, [Qid_Expiry_Date] = @Qid_Expiry_Date, [Passport_Number] = @Passport_Number, [PP_Expiry_Date] = @PP_Expiry_Date, [Driving_Licence] = @Driving_Licence, [D_Licence_Expiry_Date] = @D_Licence_Expiry_Date, [Health_Card_No] = @Health_Card_No, [Health_Card_Expiry_Date] = @Health_Card_Expiry_Date, [Dath_of_Birth] = @Dath_of_Birth, [Blood_Group] = @Blood_Group, [Join_Date] = @Join_Date, [Re_entry_date] = @Re_entry_date, [Total_year_service] = @Total_year_service, [Re_service] = @Re_service, [Basic_salary] = @Basic_salary, [Allawance] = @Allawance, [Mobile_Number] = @Mobile_Number, [Address_in_qater] = @Address_in_qater, [Next_of_kin] = @Next_of_kin, [Image] = @Image, [Destination_Image] = @Destination_Image, [Qid_image] = @Qid_image, [PP_image] = @PP_image, [DL_Image] = @DL_Image, [Health_Image] = @Health_Image, [Allowance_Image] = @Allowance_Image WHERE (([id] = @Original_id) AND ((@IsNull_Employee_No = 1 AND [Employee_No] IS NULL) OR ([Employee_No] = @Original_Employee_No)) AND ((@IsNull_Employee_Name = 1 AND [Employee_Name] IS NULL) OR ([Employee_Name] = @Original_Employee_Name)) AND ((@IsNull_Nationality = 1 AND [Nationality] IS NULL) OR ([Nationality] = @Original_Nationality)) AND ((@IsNull_Destination = 1 AND [Destination] IS NULL) OR ([Destination] = @Original_Destination)) AND ((@IsNull_Division = 1 AND [Division] IS NULL) OR ([Division] = @Original_Division)) AND ((@IsNull_Qid_No = 1 AND [Qid_No] IS NULL) OR ([Qid_No] = @Original_Qid_No)) AND ((@IsNull_Qid_Expiry_Date = 1 AND [Qid_Expiry_Date] IS NULL) OR ([Qid_Expiry_Date] = @Original_Qid_Expiry_Date)) AND ((@IsNull_Passport_Number = 1 AND [Passport_Number] IS NULL) OR ([Passport_Number] = @Original_Passport_Number)) AND ((@IsNull_PP_Expiry_Date = 1 AND [PP_Expiry_Date] IS NULL) OR ([PP_Expiry_Date] = @Original_PP_Expiry_Date)) AND ((@IsNull_Driving_Licence = 1 AND [Driving_Licence] IS NULL) OR ([Driving_Licence] = @Original_Driving_Licence)) AND ((@IsNull_D_Licence_Expiry_Date = 1 AND [D_Licence_Expiry_Date] IS NULL) OR ([D_Licence_Expiry_Date] = @Original_D_Licence_Expiry_Date)) AND ((@IsNull_Health_Card_No = 1 AND [Health_Card_No] IS NULL) OR ([Health_Card_No] = @Original_Health_Card_No)) AND ((@IsNull_Health_Card_Expiry_Date = 1 AND [Health_Card_Expiry_Date] IS NULL) OR ([Health_Card_Expiry_Date] = @Original_Health_Card_Expiry_Date)) AND ((@IsNull_Dath_of_Birth = 1 AND [Dath_of_Birth] IS NULL) OR ([Dath_of_Birth] = @Original_Dath_of_Birth)) AND ((@IsNull_Blood_Group = 1 AND [Blood_Group] IS NULL) OR ([Blood_Group] = @Original_Blood_Group)) AND ((@IsNull_Join_Date = 1 AND [Join_Date] IS NULL) OR ([Join_Date] = @Original_Join_Date)) AND ((@IsNull_Re_entry_date = 1 AND [Re_entry_date] IS NULL) OR ([Re_entry_date] = @Original_Re_entry_date)) AND ((@IsNull_Total_year_service = 1 AND [Total_year_service] IS NULL) OR ([Total_year_service] = @Original_Total_year_service)) AND ((@IsNull_Re_service = 1 AND [Re_service] IS NULL) OR ([Re_service] = @Original_Re_service)) AND ((@IsNull_Basic_salary = 1 AND [Basic_salary] IS NULL) OR ([Basic_salary] = @Original_Basic_salary)) AND ((@IsNull_Allawance = 1 AND [Allawance] IS NULL) OR ([Allawance] = @Original_Allawance)) AND ((@IsNull_Mobile_Number = 1 AND [Mobile_Number] IS NULL) OR ([Mobile_Number] = @Original_Mobile_Number)) AND ((@IsNull_Address_in_qater = 1 AND [Address_in_qater] IS NULL) OR ([Address_in_qater] = @Original_Address_in_qater)) AND ((@IsNull_Next_of_kin = 1 AND [Next_of_kin] IS NULL) OR ([Next_of_kin] = @Original_Next_of_kin)));
+SELECT id, Employee_No, Employee_Name, Nationality, Destination, Division, Qid_No, Qid_Expiry_Date, Passport_Number, PP_Expiry_Date, Driving_Licence, D_Licence_Expiry_Date, Health_Card_No, Health_Card_Expiry_Date, Dath_of_Birth, Blood_Group, Join_Date, Re_entry_date, Total_year_service, Re_service, Basic_salary, Allawance, Mobile_Number, Address_in_qater, Next_of_kin, Image, Destination_Image, Qid_image, PP_image, DL_Image, Health_Image, Allowance_Image FROM employee_form WHERE (id = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Employee_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Employee_Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nationality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Destination" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Destination" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Division" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Qid_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Qid_No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Qid_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Qid_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Passport_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Passport_Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@PP_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PP_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Driving_Licence" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Driving_Licence" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@D_Licence_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="D_Licence_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Health_Card_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_No" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Health_Card_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Dath_of_Birth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Dath_of_Birth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Blood_Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Blood_Group" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Join_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Join_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Re_entry_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_entry_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Total_year_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Total_year_service" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Re_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_service" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Basic_salary" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Basic_salary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Allawance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Allawance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Mobile_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Mobile_Number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Address_in_qater" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address_in_qater" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Next_of_kin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Next_of_kin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Destination_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Destination_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Qid_image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Qid_image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@PP_image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="PP_image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@DL_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="DL_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Health_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Health_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Allowance_Image" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Allowance_Image" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Employee_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Employee_No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Employee_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Employee_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Employee_Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Employee_Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Employee_Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nationality" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nationality" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nationality" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Destination" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Destination" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Destination" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Destination" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Division" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Division" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Qid_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Qid_No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Qid_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Qid_No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Qid_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Qid_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Qid_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Qid_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Passport_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Passport_Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Passport_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Passport_Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PP_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PP_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_PP_Expiry_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PP_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Driving_Licence" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Driving_Licence" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Driving_Licence" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Driving_Licence" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_D_Licence_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="D_Licence_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_D_Licence_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="D_Licence_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Health_Card_No" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Health_Card_No" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Health_Card_No" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_No" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Health_Card_Expiry_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Health_Card_Expiry_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Health_Card_Expiry_Date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Health_Card_Expiry_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Dath_of_Birth" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Dath_of_Birth" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Dath_of_Birth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Dath_of_Birth" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Blood_Group" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Blood_Group" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Blood_Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Blood_Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Join_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Join_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Join_Date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Join_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Re_entry_date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Re_entry_date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Re_entry_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_entry_date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Total_year_service" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Total_year_service" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Total_year_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Total_year_service" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Re_service" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Re_service" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Re_service" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Re_service" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Basic_salary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Basic_salary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Basic_salary" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Basic_salary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Allawance" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Allawance" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Allawance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Allawance" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mobile_Number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mobile_Number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Mobile_Number" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Mobile_Number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Address_in_qater" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Address_in_qater" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Address_in_qater" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address_in_qater" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Next_of_kin" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Next_of_kin" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Next_of_kin" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Next_of_kin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="id" DataSourceName="[hr Management software].dbo.employee_form" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="Employee_No" DataSetColumn="Employee_No" />
+              <Mapping SourceColumn="Employee_Name" DataSetColumn="Employee_Name" />
+              <Mapping SourceColumn="Nationality" DataSetColumn="Nationality" />
+              <Mapping SourceColumn="Destination" DataSetColumn="Destination" />
+              <Mapping SourceColumn="Division" DataSetColumn="Division" />
+              <Mapping SourceColumn="Qid_No" DataSetColumn="Qid_No" />
+              <Mapping SourceColumn="Qid_Expiry_Date" DataSetColumn="Qid_Expiry_Date" />
+              <Mapping SourceColumn="Passport_Number" DataSetColumn="Passport_Number" />
+              <Mapping SourceColumn="PP_Expiry_Date" DataSetColumn="PP_Expiry_Date" />
+              <Mapping SourceColumn="Driving_Licence" DataSetColumn="Driving_Licence" />
+              <Mapping SourceColumn="D_Licence_Expiry_Date" DataSetColumn="D_Licence_Expiry_Date" />
+              <Mapping SourceColumn="Health_Card_No" DataSetColumn="Health_Card_No" />
+              <Mapping SourceColumn="Health_Card_Expiry_Date" DataSetColumn="Health_Card_Expiry_Date" />
+              <Mapping SourceColumn="Dath_of_Birth" DataSetColumn="Dath_of_Birth" />
+              <Mapping SourceColumn="Blood_Group" DataSetColumn="Blood_Group" />
+              <Mapping SourceColumn="Join_Date" DataSetColumn="Join_Date" />
+              <Mapping SourceColumn="Re_entry_date" DataSetColumn="Re_entry_date" />
+              <Mapping SourceColumn="Total_year_service" DataSetColumn="Total_year_service" />
+              <Mapping SourceColumn="Re_service" DataSetColumn="Re_service" />
+              <Mapping SourceColumn="Basic_salary" DataSetColumn="Basic_salary" />
+              <Mapping SourceColumn="Allawance" DataSetColumn="Allawance" />
+              <Mapping SourceColumn="Mobile_Number" DataSetColumn="Mobile_Number" />
+              <Mapping SourceColumn="Address_in_qater" DataSetColumn="Address_in_qater" />
+              <Mapping SourceColumn="Next_of_kin" DataSetColumn="Next_of_kin" />
+              <Mapping SourceColumn="Image" DataSetColumn="Image" />
+              <Mapping SourceColumn="Destination_Image" DataSetColumn="Destination_Image" />
+              <Mapping SourceColumn="Qid_image" DataSetColumn="Qid_image" />
+              <Mapping SourceColumn="PP_image" DataSetColumn="PP_image" />
+              <Mapping SourceColumn="DL_Image" DataSetColumn="DL_Image" />
+              <Mapping SourceColumn="Health_Image" DataSetColumn="Health_Image" />
+              <Mapping SourceColumn="Allowance_Image" DataSetColumn="Allowance_Image" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hr_Management_softwareDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hr_Management_softwareDataSet2" msprop:Generator_UserDSName="hr_Management_softwareDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="employee_form" msprop:Generator_TableClassName="employee_formDataTable" msprop:Generator_TableVarName="tableemployee_form" msprop:Generator_RowChangedName="employee_formRowChanged" msprop:Generator_TablePropName="employee_form" msprop:Generator_RowDeletingName="employee_formRowDeleting" msprop:Generator_RowChangingName="employee_formRowChanging" msprop:Generator_RowEvHandlerName="employee_formRowChangeEventHandler" msprop:Generator_RowDeletedName="employee_formRowDeleted" msprop:Generator_RowClassName="employee_formRow" msprop:Generator_UserTableName="employee_form" msprop:Generator_RowEvArgName="employee_formRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="Employee_No" msprop:Generator_ColumnVarNameInTable="columnEmployee_No" msprop:Generator_ColumnPropNameInRow="Employee_No" msprop:Generator_ColumnPropNameInTable="Employee_NoColumn" msprop:Generator_UserColumnName="Employee_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Name" msprop:Generator_ColumnVarNameInTable="columnEmployee_Name" msprop:Generator_ColumnPropNameInRow="Employee_Name" msprop:Generator_ColumnPropNameInTable="Employee_NameColumn" msprop:Generator_UserColumnName="Employee_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nationality" msprop:Generator_ColumnVarNameInTable="columnNationality" msprop:Generator_ColumnPropNameInRow="Nationality" msprop:Generator_ColumnPropNameInTable="NationalityColumn" msprop:Generator_UserColumnName="Nationality" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Destination" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_UserColumnName="Destination" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Division" msprop:Generator_ColumnVarNameInTable="columnDivision" msprop:Generator_ColumnPropNameInRow="Division" msprop:Generator_ColumnPropNameInTable="DivisionColumn" msprop:Generator_UserColumnName="Division" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qid_No" msprop:Generator_ColumnVarNameInTable="columnQid_No" msprop:Generator_ColumnPropNameInRow="Qid_No" msprop:Generator_ColumnPropNameInTable="Qid_NoColumn" msprop:Generator_UserColumnName="Qid_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qid_Expiry_Date" msprop:Generator_ColumnVarNameInTable="columnQid_Expiry_Date" msprop:Generator_ColumnPropNameInRow="Qid_Expiry_Date" msprop:Generator_ColumnPropNameInTable="Qid_Expiry_DateColumn" msprop:Generator_UserColumnName="Qid_Expiry_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Passport_Number" msprop:Generator_ColumnVarNameInTable="columnPassport_Number" msprop:Generator_ColumnPropNameInRow="Passport_Number" msprop:Generator_ColumnPropNameInTable="Passport_NumberColumn" msprop:Generator_UserColumnName="Passport_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PP_Expiry_Date" msprop:Generator_ColumnVarNameInTable="columnPP_Expiry_Date" msprop:Generator_ColumnPropNameInRow="PP_Expiry_Date" msprop:Generator_ColumnPropNameInTable="PP_Expiry_DateColumn" msprop:Generator_UserColumnName="PP_Expiry_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Driving_Licence" msprop:Generator_ColumnVarNameInTable="columnDriving_Licence" msprop:Generator_ColumnPropNameInRow="Driving_Licence" msprop:Generator_ColumnPropNameInTable="Driving_LicenceColumn" msprop:Generator_UserColumnName="Driving_Licence" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="D_Licence_Expiry_Date" msprop:Generator_ColumnVarNameInTable="columnD_Licence_Expiry_Date" msprop:Generator_ColumnPropNameInRow="D_Licence_Expiry_Date" msprop:Generator_ColumnPropNameInTable="D_Licence_Expiry_DateColumn" msprop:Generator_UserColumnName="D_Licence_Expiry_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Health_Card_No" msprop:Generator_ColumnVarNameInTable="columnHealth_Card_No" msprop:Generator_ColumnPropNameInRow="Health_Card_No" msprop:Generator_ColumnPropNameInTable="Health_Card_NoColumn" msprop:Generator_UserColumnName="Health_Card_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Health_Card_Expiry_Date" msprop:Generator_ColumnVarNameInTable="columnHealth_Card_Expiry_Date" msprop:Generator_ColumnPropNameInRow="Health_Card_Expiry_Date" msprop:Generator_ColumnPropNameInTable="Health_Card_Expiry_DateColumn" msprop:Generator_UserColumnName="Health_Card_Expiry_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Dath_of_Birth" msprop:Generator_ColumnVarNameInTable="columnDath_of_Birth" msprop:Generator_ColumnPropNameInRow="Dath_of_Birth" msprop:Generator_ColumnPropNameInTable="Dath_of_BirthColumn" msprop:Generator_UserColumnName="Dath_of_Birth" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Blood_Group" msprop:Generator_ColumnVarNameInTable="columnBlood_Group" msprop:Generator_ColumnPropNameInRow="Blood_Group" msprop:Generator_ColumnPropNameInTable="Blood_GroupColumn" msprop:Generator_UserColumnName="Blood_Group" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Join_Date" msprop:Generator_ColumnVarNameInTable="columnJoin_Date" msprop:Generator_ColumnPropNameInRow="Join_Date" msprop:Generator_ColumnPropNameInTable="Join_DateColumn" msprop:Generator_UserColumnName="Join_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Re_entry_date" msprop:Generator_ColumnVarNameInTable="columnRe_entry_date" msprop:Generator_ColumnPropNameInRow="Re_entry_date" msprop:Generator_ColumnPropNameInTable="Re_entry_dateColumn" msprop:Generator_UserColumnName="Re_entry_date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_year_service" msprop:Generator_ColumnVarNameInTable="columnTotal_year_service" msprop:Generator_ColumnPropNameInRow="Total_year_service" msprop:Generator_ColumnPropNameInTable="Total_year_serviceColumn" msprop:Generator_UserColumnName="Total_year_service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Re_service" msprop:Generator_ColumnVarNameInTable="columnRe_service" msprop:Generator_ColumnPropNameInRow="Re_service" msprop:Generator_ColumnPropNameInTable="Re_serviceColumn" msprop:Generator_UserColumnName="Re_service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Basic_salary" msprop:Generator_ColumnVarNameInTable="columnBasic_salary" msprop:Generator_ColumnPropNameInRow="Basic_salary" msprop:Generator_ColumnPropNameInTable="Basic_salaryColumn" msprop:Generator_UserColumnName="Basic_salary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Allawance" msprop:Generator_ColumnVarNameInTable="columnAllawance" msprop:Generator_ColumnPropNameInRow="Allawance" msprop:Generator_ColumnPropNameInTable="AllawanceColumn" msprop:Generator_UserColumnName="Allawance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mobile_Number" msprop:Generator_ColumnVarNameInTable="columnMobile_Number" msprop:Generator_ColumnPropNameInRow="Mobile_Number" msprop:Generator_ColumnPropNameInTable="Mobile_NumberColumn" msprop:Generator_UserColumnName="Mobile_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address_in_qater" msprop:Generator_ColumnVarNameInTable="columnAddress_in_qater" msprop:Generator_ColumnPropNameInRow="Address_in_qater" msprop:Generator_ColumnPropNameInTable="Address_in_qaterColumn" msprop:Generator_UserColumnName="Address_in_qater" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Next_of_kin" msprop:Generator_ColumnVarNameInTable="columnNext_of_kin" msprop:Generator_ColumnPropNameInRow="Next_of_kin" msprop:Generator_ColumnPropNameInTable="Next_of_kinColumn" msprop:Generator_UserColumnName="Next_of_kin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" msprop:Generator_UserColumnName="Image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Destination_Image" msprop:Generator_ColumnVarNameInTable="columnDestination_Image" msprop:Generator_ColumnPropNameInRow="Destination_Image" msprop:Generator_ColumnPropNameInTable="Destination_ImageColumn" msprop:Generator_UserColumnName="Destination_Image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Qid_image" msprop:Generator_ColumnVarNameInTable="columnQid_image" msprop:Generator_ColumnPropNameInRow="Qid_image" msprop:Generator_ColumnPropNameInTable="Qid_imageColumn" msprop:Generator_UserColumnName="Qid_image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="PP_image" msprop:Generator_ColumnVarNameInTable="columnPP_image" msprop:Generator_ColumnPropNameInRow="PP_image" msprop:Generator_ColumnPropNameInTable="PP_imageColumn" msprop:Generator_UserColumnName="PP_image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="DL_Image" msprop:Generator_ColumnVarNameInTable="columnDL_Image" msprop:Generator_ColumnPropNameInRow="DL_Image" msprop:Generator_ColumnPropNameInTable="DL_ImageColumn" msprop:Generator_UserColumnName="DL_Image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Health_Image" msprop:Generator_ColumnVarNameInTable="columnHealth_Image" msprop:Generator_ColumnPropNameInRow="Health_Image" msprop:Generator_ColumnPropNameInTable="Health_ImageColumn" msprop:Generator_UserColumnName="Health_Image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Allowance_Image" msprop:Generator_ColumnVarNameInTable="columnAllowance_Image" msprop:Generator_ColumnPropNameInRow="Allowance_Image" msprop:Generator_ColumnPropNameInTable="Allowance_ImageColumn" msprop:Generator_UserColumnName="Allowance_Image" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:employee_form" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

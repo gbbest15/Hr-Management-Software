@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System\bin\x86\Debug\HR Management System.exe">
+   <Modules>
+    <Module Name="hr management system.exe">
+     <Namespaces>
+      <Namespace Name="HR_Management_System">
+       <Types>
+        <Type Name="Backup" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#query(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="Backup.vb" Line="77">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'Backup.query(String)' could contain the following variables 'que'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EmployeeForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button5_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System\FormReport" File="EmployeeForm.vb" Line="9">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'EmployeeForm.Button5_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmEmployee" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmEmployee.vb" Line="428">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmEmployee.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmEmployee.vb" Line="439">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmEmployee.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmEmployee.vb" Line="450">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmEmployee.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmEmployee.vb" Line="461">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmEmployee.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmEmployee.vb" Line="472">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmEmployee.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmEmployee.vb" Line="484">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmEmployee.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmVehicle" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmVehicle.vb" Line="191">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmVehicle.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="frmVehicle.vb" Line="202">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmVehicle.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="gatepass" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="gatepass.vb" Line="90">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'gatepass.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="gatepass.vb" Line="101">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'gatepass.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="gatepass.vb" Line="112">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'gatepass.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="gatepass.vb" Line="123">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'gatepass.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GatePassForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button5_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System\FormReport" File="GatePassForm.vb" Line="9">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'GatePassForm.Button5_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet+Vehicle_ExpensesDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet.Vehicle_ExpensesDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+cert_tranDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.cert_tranDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+DropdownMenuDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.DropdownMenuDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+employee_formDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.employee_formDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+Gate_PassDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.Gate_PassDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+gratidute_paidDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.gratidute_paidDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+Leave_SalaryDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.Leave_SalaryDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+letterDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.letterDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+loginDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.loginDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+V_scheduleDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.V_scheduleDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+Vehicle_ExpensesDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.Vehicle_ExpensesDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet1+Vehicle_NoDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet1.Vehicle_NoDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet2'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="hr_Management_softwareDataSet2+employee_formDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'hr_Management_softwareDataSet2.employee_formDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LeaveForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button5_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System\FormReport" File="LeaveSalaryForm.vb" Line="12">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'LeaveForm.Button5_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LeaveSavary" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="LeaveSavary.vb" Line="136">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'LeaveSavary.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="LeaveSavary.vb" Line="147">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'LeaveSavary.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Letters" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="Letters.vb" Line="112">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'Letters.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TrainingCert" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnSearch_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="TrainingCert.vb" Line="124">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'TrainingCert.btnSearch_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TraningCertificateForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button5_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System\FormReport" File="TraningCertificateForm.vb" Line="9">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'TraningCertificateForm.Button5_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="VacationSchedule" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="VacationSchedule.vb" Line="229">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'VacationSchedule.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="VehicleExpenses" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="VehicleExpenses.vb" Line="203">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'VehicleExpenses.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="VehicleExpenses.vb" Line="214">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'VehicleExpenses.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System" File="VehicleExpenses.vb" Line="225">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'VehicleExpenses.Button21_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox11.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="VehicleForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button5_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-08-18 10:06:41Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\G_BEN\Documents\Visual Studio 2015\Projects\HR Management System\HR Management System\FormReport" File="VehicleForm.vb" Line="11">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'VehicleForm.Button5_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240">
+   <Name>Implement ISerializable correctly</Name>
+   <Description>If a type is assignable to ISerializable, it should implement GetObjectData. For unsealed types, the GetObjectData method should be callable and overridable by derived types.</Description>
+   <Resolution Name="Default">Add an implementation of GetObjectData to type {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182342.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

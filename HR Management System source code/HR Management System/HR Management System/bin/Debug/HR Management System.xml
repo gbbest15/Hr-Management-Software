@@ -1,0 +1,461 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HR Management System
+</name>
+</assembly>
+<members>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet.Vehicle_ExpensesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet.Vehicle_ExpensesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet.Vehicle_ExpensesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSetTableAdapters.Vehicle_ExpensesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(HR_Management_System.hr_Management_softwareDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(HR_Management_System.hr_Management_softwareDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(HR_Management_System.hr_Management_softwareDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.UpdateAll(HR_Management_System.hr_Management_softwareDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.cert_tranDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.DropdownMenuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.employee_formDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Gate_PassDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.gratidute_paidDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Leave_SalaryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.letterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.loginDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.V_scheduleDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Vehicle_ExpensesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Vehicle_NoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.cert_tranRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.DropdownMenuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.employee_formRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Gate_PassRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.gratidute_paidRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Leave_SalaryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.letterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.loginRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.V_scheduleRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Vehicle_ExpensesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Vehicle_NoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.cert_tranRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.DropdownMenuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.employee_formRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Gate_PassRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.gratidute_paidRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Leave_SalaryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.letterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.loginRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.V_scheduleRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Vehicle_ExpensesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1.Vehicle_NoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.cert_tranTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.DropdownMenuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.employee_formTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.Gate_PassTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.gratidute_paidTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.Leave_SalaryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.letterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.loginTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.V_scheduleTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.Vehicle_ExpensesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.Vehicle_NoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(HR_Management_System.hr_Management_softwareDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(HR_Management_System.hr_Management_softwareDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(HR_Management_System.hr_Management_softwareDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.UpdateAll(HR_Management_System.hr_Management_softwareDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2.employee_formDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2.employee_formRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2.employee_formRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.employee_formTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(HR_Management_System.hr_Management_softwareDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(HR_Management_System.hr_Management_softwareDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(HR_Management_System.hr_Management_softwareDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.UpdateAll(HR_Management_System.hr_Management_softwareDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:HR_Management_System.hr_Management_softwareDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:HR_Management_System.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.form_icon_5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.form_icon_51">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.gate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.images">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.IMG_20200822_WA0007">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.leave">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.plan">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:HR_Management_System.My.Resources.Resources.vichile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
